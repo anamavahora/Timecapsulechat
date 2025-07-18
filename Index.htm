@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Time Capsule Chat</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js"></script>
+</head>
+<body>
+
+  <div id="login-screen" class="screen">
+    <h1>Time Capsule Chat</h1>
+    <button id="btn-google">Sign in with Google</button>
+  </div>
+
+  <div id="chat-screen" class="screen hidden">
+    <header>
+      <h2>Your Capsules</h2>
+      <button id="btn-logout">Logout</button>
+    </header>
+    <section id="capsules-list"></section>
+    <form id="capsule-form">
+      <textarea id="msg" placeholder="Write your capsule message…" required></textarea>
+      <input type="date" id="unlock-date" required>
+      <button type="submit">Send Capsule</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
