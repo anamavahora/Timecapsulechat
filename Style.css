@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.screen {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.hidden { display: none; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#capsules-list {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.capsule {
+  background: #eef6ff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+#capsule-form textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+#capsule-form input,
+#capsule-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccd;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+  background: #005fcc;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background: #004bb5;
+}
